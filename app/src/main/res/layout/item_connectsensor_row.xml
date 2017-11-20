@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/addressparentview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_btnheight">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/sensor_address"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+
+        <com.striketec.mobile.customview.SquareHeightLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/default_smallestpadding">
+
+            <ImageView
+                android:id="@+id/checkicon"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_circlegreeen"
+                android:src="@drawable/img_check"
+                android:padding="@dimen/default_smallestpadding"/>
+
+        </com.striketec.mobile.customview.SquareHeightLinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/separator"/>
+
+    <RelativeLayout
+        android:id="@+id/selectsensorparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin">
+
+            <!--android:layout_marginLeft="@dimen/default_margin"-->
+            <!--android:layout_marginRight="@dimen/default_margin"-->
+
+            <com.striketec.mobile.customview.SquareLinearLayout
+                android:id="@+id/left_sensor"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_round_hexa5"
+                android:gravity="center">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/default_width"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/lefthand"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginTop="@dimen/default_smallpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setforleft"
+                    android:textColor="@color/punches_text"/>
+
+            </com.striketec.mobile.customview.SquareLinearLayout>
+
+            <com.striketec.mobile.customview.SquareLinearLayout
+                android:id="@+id/right_sensor"
+                android:layout_marginLeft="@dimen/default_smallpadding"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_round_hexa5"
+                android:gravity="center">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/default_width"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/righthand"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginTop="@dimen/default_smallpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setforright"
+                    android:textColor="@color/punches_text"/>
+
+            </com.striketec.mobile.customview.SquareLinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/separator"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

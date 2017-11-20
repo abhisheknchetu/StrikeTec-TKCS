@@ -1,0 +1,6 @@
+"Punch","x1","x2","y1","y2","y1","y2","z1","z2"
+"right/left","r&l",,"left",,"right",,"r&l",
+"Jab",1,-1,1,-1,-1,1,1,-1
+"Hook",1,-1,-1,1,1,-1,-1,1
+"Uppercut","TBD",,,,,,,
+"Straight","TBD",,,,,,,

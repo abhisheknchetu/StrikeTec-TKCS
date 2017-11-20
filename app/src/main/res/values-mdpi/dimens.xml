@@ -1,0 +1,97 @@
+<resources>
+    <dimen name="logo_padding">40dp</dimen>
+    <dimen name="logo_padding_small">20dp</dimen>
+    <dimen name="logo_padding_large">60dp</dimen>
+
+    <dimen name="top_margin">40dp</dimen>
+    <dimen name="default_margin">12dp</dimen>
+    <dimen name="default_btnheight">32.5dp</dimen>
+
+    <dimen name="default_smallbtnheight">30dp</dimen>
+    <dimen name="default_cellheight">30dp</dimen>
+    <dimen name="default_textsize">14sp</dimen>
+
+    <dimen name="default_smalltextsize">13sp</dimen>
+    <dimen name="btn_textsize">19sp</dimen>
+    <dimen name="default_width">40dp</dimen>
+
+    <dimen name="default_padding">11dp</dimen>
+    <dimen name="default_editheight">20dp</dimen>
+    <dimen name="default_smallpadding">9dp</dimen>
+
+    <dimen name="default_smallestpadding">4dp</dimen>
+    <dimen name="tablayout_height">60dp</dimen>
+    <dimen name="tablayout_margin">8dp</dimen>
+
+    <dimen name="tablayout_padding">15dp</dimen>
+    <dimen name="tablayout_mainheight">50dp</dimen>
+    <dimen name="tabtitle_textsize">11sp</dimen>
+
+    <integer name="tablayout_paddingwithint">16</integer>
+    <dimen name="textsize_25">20sp</dimen>
+    <dimen name="wheel_rounds">72sp</dimen>
+
+    <dimen name="wheel_roundtime">42sp</dimen>
+    <integer name="wheel_rounds_active">82</integer>
+    <integer name="wheel_rounds_deactive">62</integer>
+
+    <integer name="wheel_roundtime_active">41</integer>
+    <integer name="wheel_roundtime_deactive">36</integer>
+    <dimen name="textsize_10">11sp</dimen>
+
+    <dimen name="textsize_35">33sp</dimen>
+    <dimen name="height_20">18dp</dimen>
+    <dimen name="textsize_17">14sp</dimen>
+
+    <dimen name="audio_height">20dp</dimen>
+    <dimen name="training_bottom_height">10dp</dimen>
+
+    <dimen name="textsize_130">92sp</dimen>
+    <integer name="tip_textsize">32</integer>
+    <dimen name="btn_width110">90dp</dimen>
+    <dimen name="btn_width90">50dp</dimen>
+
+    <dimen name="width_300">210dp</dimen>
+    <dimen name="width_150">110dp</dimen>
+    <dimen name="top_15">-15dp</dimen>
+    <dimen name="top_30">22dp</dimen>
+
+    <integer name="punch_textsize_90">64</integer>
+    <integer name="punch_textsize_60">38</integer>
+    <dimen name="textsize_75">63sp</dimen>
+
+    <dimen name="width_17">11dp</dimen>
+    <dimen name="textsize_9">8sp</dimen>
+
+    <integer name="border_stroke_width">3</integer>
+    <dimen name="width_80">60dp</dimen>
+    <integer name="int_70">50</integer>
+    <integer name="int_25">17</integer>
+    <dimen name="barwidth_25">17dp</dimen>
+    <integer name="int_5">3</integer>
+    <dimen name="barmargin_5">3dp</dimen>
+    <dimen name="titleview_height">35dp</dimen>
+    <dimen name="titleimage_padding">7.5dp</dimen>
+    <dimen name="textsize_11">13sp</dimen>
+    <dimen name="textsize_45">41sp</dimen>
+    <dimen name="textsize_30">26sp</dimen>
+    <integer name="int_30">18</integer>
+    <dimen name="height_220">140dp</dimen>
+    <dimen name="width_120">80dp</dimen>
+    <dimen name="progress_height">6dp</dimen>
+    <dimen name="progress_radius">3dp</dimen>
+
+    <integer name="video_radius_large">18</integer>
+    <integer name="video_radius_small">8</integer>
+    <dimen name="height_300">220dp</dimen>
+    <dimen name="textsize_20">16sp</dimen>
+    <dimen name="default_smallmargin">2dp</dimen>
+    <dimen name="textsize_22">18sp</dimen>
+    <dimen name="height_270">180dp</dimen>
+    <dimen name="leaderboard_smallprofileheight">40dp</dimen>
+    <dimen name="leaderboard_largeprofielheight">55dp</dimen>
+    <dimen name="leaderboard_smallrankheight">20dp</dimen>
+    <dimen name="leaderboard_largerankheight">30dp</dimen>
+    <dimen name="height_90">70dp</dimen>
+
+</resources>

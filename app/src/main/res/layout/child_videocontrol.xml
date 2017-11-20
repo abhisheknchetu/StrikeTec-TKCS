@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="@dimen/default_editheight"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <ImageView
+        android:id="@+id/skip_previous"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/video_prev_active"/>
+
+    <ImageView
+        android:id="@+id/fast_rewind"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/video_prev_active"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/pause_play"
+        android:layout_marginLeft="@dimen/default_smallbtnheight"
+        android:layout_marginRight="@dimen/default_smallbtnheight"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/video_play_new"/>
+
+    <ImageView
+        android:id="@+id/fast_forward"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/video_next_active"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/skip_next"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/video_next_active"/>
+
+
+
+</LinearLayout>

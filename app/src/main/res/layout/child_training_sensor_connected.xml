@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginBottom="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_padding"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/left_sensor_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="start|top"
+            android:text="@string/battery_default_value"
+            android:textColor="@color/battery_color"
+            android:textSize="@dimen/textsize_10" />
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/battery_layout_left"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/default_smallbtnheight"
+            android:background="@drawable/battery_img">
+
+            <View
+                android:id="@+id/battery_life_left"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="3dp"
+                android:background="@color/battery_color" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/right_sensor_battery"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|top"
+            android:layout_gravity="start|top"
+            android:text="@string/battery_default_value"
+            android:textColor="@color/battery_color"
+            android:textSize="@dimen/textsize_10" />
+
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:id="@+id/battery_layout_right"
+            android:layout_height="match_parent"
+            android:layout_width="@dimen/default_smallbtnheight"
+            android:background="@drawable/battery_img">
+
+            <View
+                android:id="@+id/battery_life_right"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_marginEnd="3dp"
+                android:background="@color/battery_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/left_sensor_connection_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tablayout_padding"
+            >
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/connectsensor_bg"
+                android:layout_alignEnd="@+id/leftparent"
+                />
+
+            <LinearLayout
+                android:id="@+id/leftparent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:id="@+id/leftconnected"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hexagon_redbtn"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/left"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/textsize_10"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <RelativeLayout
+            android:id="@+id/right_sensor_connection_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tablayout_padding"
+            android:layout_gravity="end">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/connectsensor_bg"
+                android:layout_alignStart="@+id/rightparent"
+                android:layout_alignEnd="@+id/rightparent"/>
+
+            <LinearLayout
+                android:id="@+id/rightparent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:text="@string/right"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/textsize_10"/>
+
+                <ImageView
+                    android:id="@+id/rightconnected"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hexagon_redbtn"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

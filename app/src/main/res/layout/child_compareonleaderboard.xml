@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/compareleaderboard"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_smallbtnheight"
+    android:background="@color/selectbg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/nextweek"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/default_smallpadding"
+        android:src="@drawable/large_right_arrow"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        />
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:id="@+id/day_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/compareonleaderboard"
+        android:paddingLeft="@dimen/default_smallpadding"
+        android:textAllCaps="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/default_textsize"
+        android:textColor="@color/punches_text"/>
+
+</RelativeLayout>

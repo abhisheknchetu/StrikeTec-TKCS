@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tablayout_selected">
+
+        <RelativeLayout
+            android:layout_width="@dimen/leaderboard_largeprofielheight"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_smallestpadding"
+            android:layout_gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/leaderboard_largeprofielheight"
+                android:src="@drawable/default_profil"
+                android:layout_margin="@dimen/default_smallmargin">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <com.striketec.mobile.customview.CustomDigitView
+                android:id="@+id/rank"
+                android:layout_alignParentEnd="true"
+                android:layout_width="@dimen/leaderboard_largerankheight"
+                android:layout_height="@dimen/leaderboard_largerankheight"
+                android:background="@drawable/bg_user_orange"
+                android:text = "28"
+                android:gravity="center"
+                android:textSize="@dimen/default_textsize"
+                android:visibility="gone"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/rank_below"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/default_textsize"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/default_smallpadding"
+            android:paddingBottom="@dimen/default_smallpadding"
+            android:paddingRight="@dimen/default_smallpadding"
+            android:paddingLeft="@dimen/default_smallestpadding"
+            android:layout_gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/punches_text"
+                        android:textSize="@dimen/textsize_25"
+                        android:text="Attack"
+                        android:layout_centerVertical="true"/>
+
+
+                    <LinearLayout
+                        android:id="@+id/pro_layout"
+                        android:layout_marginLeft="@dimen/default_smallestpadding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/skill_image_selected"
+                            android:layout_width="@dimen/width_17"
+                            android:layout_height="@dimen/width_17"
+                            android:src="@drawable/checked_punches_icon"/>
+
+                        <com.striketec.mobile.customview.CustomTextView
+                            android:id="@+id/skill_content_selected"
+                            android:layout_marginLeft="@dimen/default_smallestpadding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:text="@string/skill_pro"
+                            android:textColor="@color/first_punch"
+                            android:textSize="@dimen/textsize_9"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/default_smallmargin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:text="80900 PTS"
+                    />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginLeft="@dimen/default_padding"
+                    android:id="@+id/followingstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/textsize_11"
+                    android:text="Following you"
+                    />
+
+            </LinearLayout>
+
+
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_marginTop="@dimen/default_smallestpadding"
+                android:id="@+id/followstatus"
+                android:layout_width="@dimen/height_90"
+                android:layout_height="@dimen/top_30"
+                android:padding="1dp"
+                android:text="@string/unfollow"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_11"
+                app:fill="true"
+                app:hexagon_color="@color/octagon_stroke"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_alphacolor"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

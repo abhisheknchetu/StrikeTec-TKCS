@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.more.AboutusActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/history_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding"
+                android:layout_margin="@dimen/default_smallpadding"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/winner_profile"
+                    android:layout_width="@dimen/width_80"
+                    android:layout_height="@dimen/width_80"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/punches_text"
+                    android:src="@drawable/tmp_avatar"
+                    />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/winner_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:gravity="end"
+                    android:text="Melvin Reyes"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/default_textsize" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/default_padding"
+                android:layout_margin="@dimen/default_smallpadding">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/losser_profile"
+                    android:layout_width="@dimen/width_80"
+                    android:layout_height="@dimen/width_80"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/punches_text"
+                    android:src="@drawable/default_profil"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:id="@+id/losser_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maurice Watson"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/default_textsize"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_alignTop="@+id/history_layout"
+            android:layout_alignBottom="@+id/history_layout"
+            android:layout_centerHorizontal="true">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/octagon_stroke"
+                android:layout_centerInParent="true"/>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_width="@dimen/default_width"
+                android:layout_height="@dimen/default_smallbtnheight"
+                android:padding="1dp"
+                android:text="@string/vs"
+                android:textAllCaps="true"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_20"
+                app:fill="false"
+                app:hexagon_color="@color/octagon_stroke"
+                android:layout_centerInParent="true"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/octagon_stroke"
+                android:layout_centerInParent="true"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maurice Watson has\nchallenged you to a battle!"
+        android:gravity="center"
+        android:textSize="@dimen/default_textsize"
+        android:textColor="@color/white"
+        android:background="@color/selectbg"
+        android:padding="@dimen/default_padding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:orientation="horizontal"
+        >
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:id="@+id/decline"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/default_btnheight"
+            android:padding="1dp"
+            android:text="@string/decline"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_20"
+            app:fill="false"
+            app:hexagon_color="@color/octagon_stroke" />
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:layout_marginStart="@dimen/default_padding"
+            android:id="@+id/accept"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/default_btnheight"
+            android:padding="1dp"
+            android:text="@string/accept"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_20"
+            app:fill="true"
+            app:hexagon_color="@color/orange" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/octagon_stroke"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_padding"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/default_textsize"/>
+
+                <com.striketec.mobile.customview.HexagonButton
+                    android:layout_marginStart="@dimen/default_padding"
+                    android:id="@+id/waiting"
+                    android:layout_width="@dimen/width_120"
+                    android:layout_height="@dimen/top_30"
+                    android:padding="1dp"
+                    android:text="@string/waiting"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/default_textsize"
+                    app:fill="true"
+                    app:hexagon_color="@color/octagon_stroke" />
+
+            </LinearLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_marginTop="@dimen/default_padding"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/battle_description"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_11"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_marginTop="@dimen/default_padding"
+                android:paddingTop="@dimen/default_smallpadding"
+                android:id="@+id/detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="1-2-s-d-g-d-\n3-4-5-4-3-2"
+                android:textSize="@dimen/default_textsize"
+                android:lineSpacingExtra="@dimen/default_smallestpadding"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

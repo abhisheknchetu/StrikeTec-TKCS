@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_whiteround"
+    android:paddingTop="@dimen/default_margin"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/logo_padding_small"
+    android:layout_marginRight="@dimen/logo_padding_small"
+    >
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/punches_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_25"/>
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:gravity="center"
+        android:textSize="@dimen/default_textsize"/>
+
+    <View
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/lightblack"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:id="@+id/positive"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="@dimen/default_editheight"
+            android:textSize="@dimen/default_textsize"
+            android:padding="1dp"
+            android:text="@string/ok"
+            app:hexagon_color="@color/orange"
+            android:layout_margin="@dimen/default_smallestpadding"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

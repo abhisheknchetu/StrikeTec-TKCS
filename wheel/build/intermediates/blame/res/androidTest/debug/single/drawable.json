@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\StrikeTec_SVN\\StrikeTec\\wheel\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_val.xml",
+        "source": "D:\\StrikeTec_SVN\\StrikeTec\\wheel\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_val.xml"
+    },
+    {
+        "merged": "D:\\StrikeTec_SVN\\StrikeTec\\wheel\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\wheel_bg.xml",
+        "source": "D:\\StrikeTec_SVN\\StrikeTec\\wheel\\build\\intermediates\\bundles\\debug\\res\\drawable\\wheel_bg.xml"
+    }
+]

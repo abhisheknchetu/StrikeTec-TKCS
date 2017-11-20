@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/default_smallbtnheight"
+    android:background="@color/selectbg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/sort_type_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1.3"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/sort_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/punchtype"
+            android:textAllCaps="true"
+            android:textColor="@color/punches_text"
+            android:textSize="@dimen/textsize_11" />
+
+        <ImageView
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:id="@+id/sort_type_img"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sort_active_down"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_duration_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/sort_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_time"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textsize_11"
+            android:textColor="@color/first_punch"/>
+
+        <ImageView
+            android:id="@+id/sort_duration_img"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sort_deactive"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_speed_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/sort_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textsize_11"
+            android:textColor="@color/first_punch"/>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:id="@+id/sort_speed_img"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sort_deactive"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sort_power_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/sort_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/power"
+            android:textAllCaps="true"
+            android:textSize="@dimen/textsize_11"
+            android:textColor="@color/first_punch"/>
+
+        <ImageView
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:id="@+id/sort_power_img"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="wrap_content"
+            android:src="@drawable/sort_deactive"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

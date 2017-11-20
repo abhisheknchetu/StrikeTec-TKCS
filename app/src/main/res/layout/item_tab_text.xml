@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.striketec.mobile.customview.CustomTextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tabtitle"
+    android:gravity="center"
+    android:textSize="@dimen/default_textsize"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:textAllCaps="true"/>

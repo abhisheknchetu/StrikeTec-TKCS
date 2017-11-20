@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.more.AboutusActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/height_270"
+                android:layout_height = "@dimen/height_270"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/tablayout_padding"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/default_profil"
+                    app:civ_border_color="@color/black"
+                    app:civ_border_width="1dp"/>
+
+                <ImageView
+                    android:id="@+id/edit_photo"
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/width_120"
+                    android:padding="@dimen/default_smallpadding"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_profile"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_smallbtnheight"
+                android:text="@string/visibility"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/default_textsize"
+                android:textColor="@color/punches_text"
+                android:background="@color/selectbg"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tablayout_mainheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/publicprofile"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <Switch
+                    android:id="@+id/switch_publicprofile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_centerVertical="true"
+                    android:track="@color/transparent"
+                    android:background="@drawable/switch_on_off"
+                    android:thumb="@drawable/switch_on_off_thumb"
+                    android:padding="3dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/default_alphacolor"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tablayout_mainheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/achievements"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <Switch
+                    android:id="@+id/switch_achievements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_centerVertical="true"
+                    android:track="@color/transparent"
+                    android:background="@drawable/switch_on_off"
+                    android:thumb="@drawable/switch_on_off_thumb"
+                    android:padding="3dp"
+                    android:checked="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/default_alphacolor"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tablayout_mainheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/trainingstatistics"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <Switch
+                    android:id="@+id/switch_trainingstatistics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_centerVertical="true"
+                    android:track="@color/transparent"
+                    android:background="@drawable/switch_on_off"
+                    android:thumb="@drawable/switch_on_off_thumb"
+                    android:padding="3dp"
+                    android:checked="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/default_alphacolor"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tablayout_mainheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/challengehistory"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <Switch
+                    android:id="@+id/switch_challengehistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:layout_centerVertical="true"
+                    android:track="@color/transparent"
+                    android:background="@drawable/switch_on_off"
+                    android:thumb="@drawable/switch_on_off_thumb"
+                    android:padding="3dp"
+                    android:checked="true"/>
+
+            </RelativeLayout>
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_smallbtnheight"
+                android:text="@string/account"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/default_textsize"
+                android:textColor="@color/punches_text"
+                android:background="@color/selectbg"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"
+                    android:alpha="0.5"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/bg_editbase"
+                    android:layout_alignParentBottom="true"/>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/changepassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tablayout_mainheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/changepassword"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/width_17"
+                    android:src="@drawable/arrow_right"
+                    android:layout_gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/default_alphacolor"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

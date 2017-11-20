@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.tabs.training.quickstart.QuickstartSettingsActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_smallbtnheight"
+        android:background="@color/selectbg">
+
+        <ImageView
+            android:id="@+id/previousweek"
+            android:adjustViewBounds="true"
+            android:paddingLeft="@dimen/default_smallpadding"
+            android:paddingRight="@dimen/default_smallpadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/width_17"
+            android:src="@drawable/arrow_left"
+            android:layout_centerVertical="true"/>
+
+        <ImageView
+            android:id="@+id/nextweek"
+            android:adjustViewBounds="true"
+            android:paddingLeft="@dimen/default_smallpadding"
+            android:paddingRight="@dimen/default_smallpadding"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/width_17"
+            android:src="@drawable/arrow_right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            />
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/day_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JUL 31 To AUG 6, 2017"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/default_textsize"
+            android:textColor="@color/punches_text"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:layout_marginBottom="@dimen/default_smallestpadding"
+        >
+
+    </ListView>
+
+</LinearLayout>

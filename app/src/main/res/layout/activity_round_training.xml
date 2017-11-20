@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.tabs.training.quickstart.QuickstartTrainingActivity"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <include layout="@layout/child_training_sensor_connected"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/tablayout_padding"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/training_top_left" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <com.striketec.mobile.customview.HexagonButton
+                        android:id="@+id/training_punchtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_editheight"
+                        android:padding="1dp"
+                        app:hexagon_color="@color/octagon_stroke"
+                        app:fill="false"
+                        android:text="Right Straight"
+                        android:textColor="@color/punches_text"
+                        android:textSize="@dimen/default_textsize"/>
+
+                    <View
+                        android:layout_marginTop="@dimen/default_smallestpadding"
+                        android:layout_below="@+id/training_punchtype"
+                        android:adjustViewBounds="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@drawable/training_top_center"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/tablayout_padding"
+                    android:src="@drawable/training_top_right"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_smallestpadding"
+                android:layout_marginBottom="@dimen/default_smallestpadding">
+
+                <include layout="@layout/child_training_status"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/round_progress_top"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/training_bottom_height">
+
+                        <RelativeLayout
+                            android:id="@+id/progress_digit"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ProgressBar
+                                android:id="@+id/trainingprogressbar"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:progressDrawable="@drawable/customprogress_roundbar" />
+
+                            <com.striketec.mobile.customview.CustomDigitView
+                                android:id="@+id/trainingprogress_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white"
+                                android:text=""
+                                android:textSize="@dimen/textsize_130" />
+
+                        </RelativeLayout>
+
+                        <com.striketec.mobile.customview.CustomTextView
+                            android:id="@+id/trainingprogress_status"
+                            android:layout_width="@dimen/width_150"
+                            android:layout_height="@dimen/default_editheight"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/trainingprogress_statusbg"
+                            android:gravity="center"
+                            android:textSize="@dimen/default_textsize" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom">
+
+                        <View
+                            android:adjustViewBounds="true"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/training_bottom_height"
+                            android:background="@drawable/training_bottom_left"/>
+
+                        <ImageView
+                            android:id="@+id/audiobtn"
+                            android:layout_marginLeft="@dimen/default_smallestpadding"
+                            android:layout_marginRight="@dimen/default_smallestpadding"
+                            android:adjustViewBounds="true"
+                            android:layout_width="@dimen/audio_height"
+                            android:layout_height="@dimen/audio_height"
+                            android:src="@drawable/audio_on"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/training_bottom_height"
+                            android:background="@drawable/training_bottom_right"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.85"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/child_training_avgdata"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_smallestpadding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_btnheight"
+            >
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_smallarrow"
+                android:layout_gravity="center_vertical"/>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:id="@+id/starttraining"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                app:hexagon_color="@color/orange"
+                android:padding="1dp"
+                android:textSize="@dimen/default_textsize"
+                android:text="@string/starttraining"
+                android:textColor="@color/lightblack">
+
+            </com.striketec.mobile.customview.HexagonButton>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_smallarrow"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

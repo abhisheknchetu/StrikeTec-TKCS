@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.striketec.mobile">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name=".StriketecApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_small" />
+
+        <service
+            android:name=".services.TrainingDataUploadService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".fcm.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.tabs.MainActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.SigninActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.SignupCredentialActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.ForgotpasswordActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.SignupProfileActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.SignupTrainingPlanActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.SignupSensorActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.onboard.OnboardActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".activity.tabs.training.sensortest.SensorTestActivity" />
+        <activity
+            android:name=".activity.tabs.training.TrainingChooseActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:theme="@style/TransparentCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.quickstart.QuickstartSettingsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.quickstart.QuickstartTrainingActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.roundtraining.RoundtrainingSettingsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.roundtraining.RoundTrainingActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.comboset.CombosetSettingsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.comboset.PlansTrainingActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.training.workout.WorkoutPlanActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.AnalysisSessionsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.AnalysisRoundsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.AnalysisCombinationActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.AnalysisRoundBreakdownActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.AnalysisSetroutineActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.CompareSelectSessionsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.analysis.AnalysisTipsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.AboutusActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.ContactusActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.HelpcenterActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.myplan.MyTrainingplanActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.goals.GoalsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.goals.NewGoalActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.StoreActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.subscription.SubscriptionActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.settings.SettingsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.settings.SettingsNotificationsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.settings.ConnectedAccountsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.settings.sensor.SensorActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.settings.sensor.SearchSensorActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.guidance.VideoPlayActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout" />
+        <activity
+            android:name=".activity.tabs.more.profile.ProfileActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.profile.EditProfileActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.leaderboard.ExploreLeaderboardActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.leaderboard.CompareLeaderboardActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.chat.RecentChatActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.chat.NewChatChooseActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.credential.CountrySelectActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.more.profile.ChangePasswordActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.leaderboard.ExploreFilterActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.tabs.home.notification.NotificationsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.battle.BattleRequestsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.battle.BattleDetailActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.subscription.TextToSpeechActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.settings.RecordingActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.subscription.SubscriptionStatusActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name=".activity.subscription.ReSubscribeActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard|screenLayout"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+    </application>
+
+</manifest>

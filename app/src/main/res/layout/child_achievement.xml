@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/compare_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/width_80"
+        >
+
+        <ImageView
+            android:id="@+id/achieve_icon"
+            android:layout_marginTop="@dimen/default_smallestpadding"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/belts_icon"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_alignEnd="@+id/achieve_icon"
+            android:layout_width="@dimen/default_btnheight"
+            android:layout_height="@dimen/default_btnheight"
+            android:background="@drawable/oval_bg"
+            android:layout_marginRight="@dimen/default_smallestpadding"
+            android:textSize="@dimen/default_textsize"
+            android:textColor="@color/white"
+            android:text="3"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:layout_marginTop="@dimen/default_smallestpadding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DISCIPLINE"
+        android:textAllCaps="true"
+        android:textSize="@dimen/default_textsize"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+

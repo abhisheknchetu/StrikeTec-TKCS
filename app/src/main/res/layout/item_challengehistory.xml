@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_alphacolor"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/history_layout"
+        android:layout_alignTop="@id/history_layout">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/alpha_tablayout">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/history_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            >
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/winner_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Melvin Reyes"
+                android:textColor="@color/punches_text"
+                android:textSize="@dimen/textsize_11"
+                android:gravity="end"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginLeft="@dimen/default_smallmargin"
+                android:id="@+id/winner_profile"
+                android:layout_width="@dimen/default_width"
+                android:layout_height="@dimen/default_width"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/punches_text"
+                android:src="@drawable/tmp_avatar"/>
+
+        </LinearLayout>
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:layout_width="@dimen/default_editheight"
+            android:layout_height="@dimen/height_20"
+            android:padding="1dp"
+            android:text="@string/vs"
+            android:textAllCaps="true"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/textsize_11"
+            app:fill="false"
+            app:hexagon_color="@color/octagon_stroke"
+            android:layout_marginLeft="@dimen/default_smallmargin"
+            android:layout_marginRight="@dimen/default_smallmargin"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/losser_profile"
+                android:layout_width="@dimen/default_width"
+                android:layout_height="@dimen/default_width"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/punches_text"
+                android:src="@drawable/default_profil"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_marginLeft="@dimen/default_smallmargin"
+
+                android:id="@+id/losser_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Melvin Reyes"
+                android:textColor="@color/punches_text"
+                android:textSize="@dimen/textsize_11"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

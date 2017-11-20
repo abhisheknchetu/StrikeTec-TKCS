@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/default_smallpadding"
+        android:paddingBottom="@dimen/default_smallpadding">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_textsize"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:adjustViewBounds="true"
+            android:id="@+id/checkview"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/img_check"
+            android:layout_marginRight="@dimen/default_padding"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_alphacolor"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

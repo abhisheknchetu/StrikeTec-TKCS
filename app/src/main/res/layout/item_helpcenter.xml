@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/subject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_smallpadding"
+        android:gravity="center">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/subject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/question1_subject"
+            android:padding="@dimen/default_smallestpadding"
+            android:textSize="@dimen/default_textsize"
+            android:lineSpacingExtra="2dp"/>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:adjustViewBounds="true"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/width_17"
+            android:src="@drawable/arrow_top"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/default_smallestpadding"
+            android:layout_marginLeft="@dimen/default_smallpadding"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_smallpadding"
+        android:gravity="center"
+        android:background="@color/opacity_black">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/question1_message"
+            android:textSize="@dimen/textsize_11"
+            android:lineSpacingExtra="2dp"
+            android:paddingLeft="@dimen/default_smallestpadding"
+            android:paddingRight="@dimen/default_smallestpadding"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_alphacolor"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

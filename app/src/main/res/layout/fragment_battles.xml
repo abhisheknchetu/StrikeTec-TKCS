@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_padding"
+                    android:padding="@dimen/default_padding">
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/battlesreceived"
+                        android:textColor="@color/punches_text"
+                        android:textSize="@dimen/default_textsize"
+                        android:textAllCaps="true"
+                        />
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_marginLeft="@dimen/default_smallestpadding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(12)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_11"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/receivedlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/separator"
+                android:layout_marginTop="@dimen/default_padding"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_padding"
+                    android:padding="@dimen/default_padding">
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mybattles"
+                        android:textColor="@color/punches_text"
+                        android:textSize="@dimen/default_textsize"
+                        android:textAllCaps="true"
+                        />
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_marginLeft="@dimen/default_smallestpadding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(8)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_11"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mybattleslistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/separator"
+                android:layout_marginTop="@dimen/default_padding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_padding"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_padding"
+                    android:padding="@dimen/default_padding">
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/finishedbattles"
+                        android:textColor="@color/punches_text"
+                        android:textSize="@dimen/default_textsize"
+                        android:textAllCaps="true"
+                        />
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_marginLeft="@dimen/default_smallestpadding"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(8)"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_11"/>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/finishedlistview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

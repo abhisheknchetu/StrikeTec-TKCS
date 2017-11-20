@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.credential.SignupSensorActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/sensorparent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_marginRight="@dimen/default_margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/top_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/searchdevices"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <com.striketec.mobile.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/searchdevices"
+                            android:textColor="@color/punches_text"
+                            android:textSize="@dimen/btn_textsize" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/default_margin"
+                            android:layout_marginBottom="@dimen/default_margin">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_gravity="center">
+
+                                <ImageView
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/phone_small"
+                                    android:layout_gravity="center"/>
+
+                                <ImageView
+                                    android:id="@+id/progressimage"
+                                    android:layout_marginTop="@dimen/default_padding"
+                                    android:layout_marginBottom="@dimen/default_padding"
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/progress_searchsensor"
+                                    android:layout_gravity="center"/>
+                                <!--android:src="@drawable/search_sensor_progress"-->
+
+                                <ImageView
+                                    android:adjustViewBounds="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1.2"
+                                    android:src="@drawable/sensor_big"
+                                    android:layout_gravity="center"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/connectsensorview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1">
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_weight="0.35"
+                                android:layout_height="1dp"/>
+
+                            <ImageView
+                                android:adjustViewBounds="true"
+                                android:layout_width="0dp"
+                                android:layout_weight="0.3"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/sensor_big"
+                                />
+                        </LinearLayout>
+
+                        <com.striketec.mobile.customview.CustomTextView
+                            android:id="@+id/foundsensors"
+                            android:layout_marginTop="@dimen/default_padding"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Found 2 Devices"
+                            android:textColor="@color/punches_text"
+                            android:textSize="@dimen/btn_textsize" />
+
+                        <com.striketec.mobile.customview.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_padding"
+                            android:gravity="center"
+                            android:text="@string/connectsensorguide"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize" />
+
+                        <ListView
+                            android:id="@+id/devicelist"
+                            android:layout_marginTop="@dimen/default_padding"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                        </ListView>
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/sensorcontrolparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_btnheight"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:layout_marginTop="@dimen/default_padding">
+
+                    <LinearLayout
+                        android:id="@+id/nextparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_btnheight"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/left_smallarrow" />
+
+                        <com.striketec.mobile.customview.HexagonButton
+                            android:id="@+id/next"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="1dp"
+                            android:text="@string/searchforneardevice"
+                            android:textColor="@color/lightblack"
+                            android:textSize="@dimen/default_textsize"
+                            app:hexagon_color="@color/orange">
+
+                        </com.striketec.mobile.customview.HexagonButton>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/right_smallarrow" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cancelparent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_btnheight"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/left_smallarrow"
+                            android:visibility="invisible"/>
+
+                        <com.striketec.mobile.customview.HexagonButton
+                            android:id="@+id/cancel"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/cancel"
+                            android:padding="1dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/default_textsize"
+                            app:hexagon_color="@color/octagon_stroke"
+                            app:fill="false">
+
+                        </com.striketec.mobile.customview.HexagonButton>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/right_smallarrow"
+                            android:visibility="invisible"/>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

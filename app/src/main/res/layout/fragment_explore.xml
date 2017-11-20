@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.SplashActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_cellheight"
+        android:paddingLeft="@dimen/default_smallpadding"
+        android:paddingRight="@dimen/default_smallpadding"
+        >
+
+        <ImageView
+            android:id="@+id/sortview"
+            android:layout_toLeftOf="@+id/filterview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/sort_icon"
+            android:layout_centerInParent="true"
+            />
+
+        <ImageView
+            android:id="@+id/filterview"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/filter_icon"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/default_smallestpadding"
+            android:paddingRight="@dimen/default_smallestpadding"
+            android:paddingBottom="@dimen/default_smallestpadding"
+            android:divider="@color/transparent"
+            android:scrollbars="none">
+
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

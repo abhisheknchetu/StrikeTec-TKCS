@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.MainActivity">
+
+    <com.striketec.mobile.customview.CustomViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_container"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/tablayout_divider" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            style="@style/AppTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tablayout_height"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/main_trainingbtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:background="@drawable/tab_mainbg"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/tabicon"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:paddingTop="3dp"
+                android:src="@drawable/tab_trainingselected" />
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/tabtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/tabtraining"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/tabtitle_textsize" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.striketec.mobile.activity.settings.SettingsActivity">
+
+    <include layout="@layout/child_toolbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/default_margin">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/barmargin_5"
+            android:text="@string/current_subscription"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/txtDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/logo_padding_small"
+                android:text="@string/thanks_subscription_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:id="@+id/changeSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btnheight"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/change"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/default_textsize"
+                app:hexagon_color="@color/orange">
+
+            </com.striketec.mobile.customview.HexagonButton>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:id="@+id/cancelSubscription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btnheight"
+                android:layout_marginStart="@dimen/default_margin"
+                android:layout_weight="1"
+                android:text="@string/cancel_subscription"
+                android:textColor="@color/lightblack"
+                android:textSize="@dimen/default_textsize"
+                app:hexagon_color="@color/orange">
+
+            </com.striketec.mobile.customview.HexagonButton>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

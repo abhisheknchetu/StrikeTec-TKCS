@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#39E3ED</color>
+    <color name="popup_bg">#0d1d26</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="light_white">#a3a3a3</color>
+    <color name="white_opacity">#3fffffff</color>
+    <color name="black">#000000</color>
+    <color name="opacity_black">#77000000</color>
+    <color name="tablayout_selected">#09151a</color>
+    <color name="alpha_tablayout">#b309151a</color>
+
+    <color name="edit_hint">#667076</color>
+    <color name="orange">#dfa543</color>
+    <color name="opacityorange">#20dfa543</color>
+    <color name="fbblue">#3B589D</color>
+    <color name="lightblack">#14323E</color>
+    <color name="punches_text">#39E3ED</color>
+    <!--<color name="octagon_stroke">#2439E3Ed</color>-->
+    <color name="octagon_stroke">#5039E3Ed</color>
+    <color name="red">#e64c4c</color>
+
+    <color name="default_alphacolor">#6614303c</color>
+
+    <color name="selectbg">#14303c</color>
+    <color name="unselectbg">#cf14303c</color>
+    <color name="default_alpha">#5014303c</color>
+    <color name="alphaselectbg">#f514303c</color>
+
+    <color name="bg_trans">#df14303c</color>
+    <color name="tablayout_divider">#8c8c8c</color>
+    <color name="tab_selected">#df14303c</color>
+
+    <color name="greencolor">#1fb37c</color>
+    <color name="alphagreencolor">#5f1fb37c</color>
+
+    <color name="dark_red">#792f34</color>
+    <color name="dark_green">#06896c</color>
+    <color name="lightblue">#53d9ff</color>
+
+    <color name="speed_color">#00ffba</color>
+    <color name="force_color">#e64c4c</color>
+
+    <color name="progress_rest">#4b81be</color>
+    <color name="progress_prepare">#926f34</color>
+    <color name="progress_round">#058669</color>
+    <color name="progress_warning">#b03e40</color>
+
+
+    <color name="first_punch">#5439e3ed</color>
+    <color name="last_punch">#b439e3ed</color>
+    <color name="first_orange">#54dfa543</color>
+    <color name="last_orange">#b4dfa543</color>
+    <color name="first_speed">#5400ffba</color>
+    <color name="last_speed">#b400ffba</color>
+    <color name="first_force">#54e64c4c</color>
+    <color name="last_force">#b4e64c4c</color>
+
+    <color name="calendar_bg">#FF173542</color>
+    <color name="calendar_topbg">#FF122D39</color>
+    <color name="circle_deactive">#0f29f7ff</color>
+    <color name="battery_color">#02c7cd</color>
+
+
+</resources>

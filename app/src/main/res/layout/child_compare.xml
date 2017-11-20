@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/compare_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/child_analysis_compare"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_smallpadding"
+        android:layout_marginBottom="@dimen/default_smallpadding">
+
+        <include layout="@layout/child_bar_highlight"/>
+
+    </LinearLayout>
+
+    <com.striketec.mobile.customview.GraphLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.striketec.mobile.customview.CompareLayout
+                android:id="@+id/besttime_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </com.striketec.mobile.customview.CompareLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.striketec.mobile.customview.CompareLayout
+                android:id="@+id/punches_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </com.striketec.mobile.customview.CompareLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.striketec.mobile.customview.CompareLayout
+                android:id="@+id/speed_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </com.striketec.mobile.customview.CompareLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <com.striketec.mobile.customview.CompareLayout
+                android:id="@+id/force_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            </com.striketec.mobile.customview.CompareLayout>
+
+        </LinearLayout>
+
+    </com.striketec.mobile.customview.GraphLinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_smallestpadding"
+        android:layout_marginBottom="@dimen/default_smallpadding">
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/punches_text"
+            android:text="@string/besttime"
+            android:textSize="@dimen/textsize_10"
+            android:gravity="center"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/orange"
+            android:text="@string/punches"
+            android:textSize="@dimen/textsize_10"
+            android:gravity="center"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/speed_color"
+            android:text="@string/speedmph"
+            android:textSize="@dimen/textsize_10"
+            android:gravity="center"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/force_color"
+            android:text="@string/powerlbs"
+            android:textSize="@dimen/textsize_10"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/default_padding">
+
+    <RelativeLayout
+        android:layout_width="@dimen/width_120"
+        android:layout_height="wrap_content"
+        >
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/newview"
+            android:layout_marginTop="@dimen/default_smallmargin"
+            android:layout_width="@dimen/leaderboard_smallprofileheight"
+            android:layout_height="wrap_content"
+            android:background="@color/punches_text"
+            android:layout_alignParentEnd="true"
+            android:text="NEW"
+            android:gravity="center_vertical|end"
+            android:padding="@dimen/default_smallmargin"
+            android:textSize="@dimen/textsize_10"
+            android:textColor="@color/black"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="@dimen/leaderboard_smallprofileheight"
+            android:layout_height="@dimen/leaderboard_smallprofileheight"
+            android:src="@drawable/default_profil"
+            android:layout_centerHorizontal="true">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/username"
+            android:layout_below="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/punches_text"
+            android:textSize="@dimen/default_textsize"
+            android:text="Attack"
+            android:singleLine="true"
+            android:padding="@dimen/default_smallmargin"
+            android:layout_centerVertical="true"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_below="@+id/username"
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/speed_color"
+            android:textSize="@dimen/textsize_10"
+            android:text="9800 pts"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

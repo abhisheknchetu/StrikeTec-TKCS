@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.more.AboutusActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/leaderboard_smallprofileheight"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/leaderboard_smallprofileheight"
+                android:src="@drawable/default_profil"
+                >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/training_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_smallpadding"
+            android:textSize="@dimen/default_textsize"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_alphacolor"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:id="@+id/challenge_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding">
+
+        <RelativeLayout
+            android:layout_width="@dimen/leaderboard_smallprofileheight"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/leaderboard_smallprofileheight"
+                android:src="@drawable/default_profil">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/request_count"
+                android:layout_width="@dimen/leaderboard_smallrankheight"
+                android:layout_height="@dimen/leaderboard_smallrankheight"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_circle_red"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_11" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_smallpadding"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/challengerequests"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/default_textsize" />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallmargin"
+                    android:gravity="center_vertical"
+                    android:text="@string/acceptrequest"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_11" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_smallbtnheight"
+        android:text="@string/activity"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="@dimen/default_textsize"
+        android:textColor="@color/punches_text"
+        android:background="@color/selectbg"
+        />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.credential.SigninActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin">
+
+        <ImageView
+            android:layout_marginTop="@dimen/top_margin"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="@dimen/logo_padding_large"
+            android:layout_marginRight="@dimen/logo_padding_large"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_padding"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_btnheight"
+            >
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/left_smallarrow"
+                android:layout_gravity="center_vertical"/>
+
+            <LinearLayout
+                android:id="@+id/fbsignin"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:background="@drawable/bg_bluehexagon">
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:src="@drawable/fb_icon"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/signinwithfb"
+                    android:textSize="@dimen/default_textsize"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/right_smallarrow"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="@drawable/line"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_marginLeft="@dimen/default_smallpadding"
+                android:layout_marginRight="@dimen/default_smallpadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/punches_text"
+                android:textAllCaps="true"
+                android:textSize="@dimen/default_textsize"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="1dp"
+                android:background="@drawable/line"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.CustomEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_editheight"
+                android:hint="@string/email"
+                android:paddingLeft="@dimen/default_smallpadding"
+                android:paddingRight="@dimen/default_smallpadding"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:background="@color/transparent"
+                android:textColorHint="@color/edit_hint"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_editbase"
+                android:layout_alignParentBottom="true"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/default_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_editheight">
+
+                <com.striketec.mobile.customview.CustomEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_editheight"
+                    android:hint="@string/password"
+                    android:paddingLeft="@dimen/default_smallpadding"
+                    android:paddingRight="@dimen/default_smallpadding"
+                    android:gravity="center"
+                    android:background="@color/transparent"
+                    android:textColorHint="@color/edit_hint"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true" />
+
+                <ImageView
+                    android:id="@+id/pwdshowhide"
+                    android:padding="8dp"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:src="@drawable/btn_eye"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/bg_editbase"
+                android:layout_alignParentBottom="true"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/default_padding"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btnheight"
+                >
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/left_smallarrow"
+                    android:layout_gravity="center_vertical"/>
+
+                <com.striketec.mobile.customview.HexagonButton
+                    android:id="@+id/signin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:padding="1dp"
+                    android:layout_height="match_parent"
+                    app:hexagon_color="@color/orange"
+                    android:textSize="@dimen/default_textsize"
+                    android:text="@string/signin"
+                    android:textColor="@color/lightblack">
+
+                </com.striketec.mobile.customview.HexagonButton>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_smallarrow"
+                    android:layout_gravity="center_vertical"/>
+
+            </LinearLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/forgotpwd"
+                android:padding="@dimen/default_smallpadding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/punches_text"
+                android:text="@string/forgotpwd"
+                android:textAllCaps="true"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/rememberme_parent"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/remember_check"
+                    android:adjustViewBounds="true"
+                    android:layout_width="@dimen/tablayout_padding"
+                    android:layout_height="@dimen/tablayout_padding"
+                    android:background="@drawable/bg_rectangle_round"
+                    android:src="@drawable/img_check"
+                    android:padding="4dp"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:paddingLeft="@dimen/default_smallestpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rememberme"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+            </View>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_btnheight"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:text="@string/signupfirst"
+                android:textAllCaps="false"
+                android:textSize="@dimen/default_textsize"
+                android:padding="1dp"
+                app:fill="false"
+                app:hexagon_color="@color/octagon_stroke"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

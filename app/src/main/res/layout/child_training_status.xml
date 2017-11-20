@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/training_speedlayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.striketec.mobile.customview.CustomDigitView
+            android:id="@+id/speed_value"
+            android:padding="@dimen/default_smallestpadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_35"
+            android:textColor="@color/speed_color"
+            android:text="350"
+            android:gravity="center"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20"
+            android:background="@drawable/speed_bg"
+            android:textColor="@color/speed_color"
+            android:text="@string/label_speed"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_17"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/training_punchlayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.striketec.mobile.customview.CustomDigitView
+            android:id="@+id/punch_value"
+            android:padding="@dimen/default_smallestpadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_35"
+            android:textColor="@color/orange"
+            android:text="350"
+            android:gravity="center"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20"
+            android:background="@drawable/punchcount_bg"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:text="@string/label_punchcount"
+            android:textSize="@dimen/textsize_17"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/training_powerlayout"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.striketec.mobile.customview.CustomDigitView
+            android:id="@+id/power_value"
+            android:padding="@dimen/default_smallestpadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_35"
+            android:textColor="@color/force_color"
+            android:text="350"
+            android:gravity="center"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_20"
+            android:background="@drawable/power_bg"
+            android:textColor="@color/force_color"
+            android:text="@string/label_power"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_17"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

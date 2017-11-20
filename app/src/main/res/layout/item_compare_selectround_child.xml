@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        >
+
+        <RelativeLayout
+            android:id="@+id/roundinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rounddetailinfoview"
+            android:layout_alignBottom="@+id/rounddetailinfoview"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/yearmonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AUG 2017"
+                android:layout_alignBottom="@+id/training_type"
+                android:textAllCaps="true"
+                android:textSize="@dimen/textsize_10"
+                android:textColor="@color/white"
+                android:gravity="bottom"/>
+
+            <com.striketec.mobile.customview.CustomDigitView
+                android:layout_marginTop="@dimen/default_smallestpadding"
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_25"
+                android:gravity="center"
+                android:background="@drawable/bg_rectangle_bad"
+                android:layout_below="@+id/yearmonth"
+                android:layout_above="@+id/duration"
+                android:layout_alignLeft="@+id/yearmonth"
+                android:layout_alignEnd="@+id/yearmonth"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/yearmonth"
+                android:text="5 Min"
+                android:layout_marginTop="@dimen/default_smallestpadding"
+                android:paddingLeft="@dimen/default_smallestpadding"
+                android:paddingRight="@dimen/default_smallestpadding"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_10"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingTop="@dimen/default_smallpadding"
+            android:paddingBottom="@dimen/default_smallpadding"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:id="@+id/rounddetailinfoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/roundinfo"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avgtime"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@color/punches_text"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    />
+
+                <com.striketec.mobile.customview.CustomDigitView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:id="@+id/avgtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/punches_text"
+                    android:text="5:00"
+                    android:textSize="@dimen/textsize_25"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secs"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@color/punches_text"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/unselectbg"
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:layout_marginRight="@dimen/default_smallestpadding"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avgspeed"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@color/speed_color"
+                    android:includeFontPadding="false"/>
+
+                <com.striketec.mobile.customview.CustomDigitView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:id="@+id/avgspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/speed_color"                    android:text="220"
+                    android:textSize="@dimen/textsize_25"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/speed_unit"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@color/speed_color"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/unselectbg"
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:layout_marginRight="@dimen/default_smallestpadding"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avgpower"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@color/force_color"
+                    android:includeFontPadding="false"/>
+
+                <com.striketec.mobile.customview.CustomDigitView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:id="@+id/avgpower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/force_color"
+                    android:text="310"
+                    android:textSize="@dimen/textsize_25"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/force_unit"
+                    android:textSize="@dimen/textsize_10"
+                    android:textColor="@color/force_color"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selectbg"/>
+
+</LinearLayout>

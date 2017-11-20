@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding"
+        >
+
+        <RelativeLayout
+            android:layout_width="@dimen/leaderboard_smallprofileheight"
+            android:layout_height="wrap_content"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/leaderboard_smallprofileheight"
+                android:src="@drawable/default_profil"
+                >
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/default_smallpadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/default_textsize"
+                    android:text="Attack"
+                    android:layout_centerVertical="true"/>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/default_smallmargin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:adjustViewBounds="true"
+                        android:layout_width="@dimen/width_17"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_clock"/>
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:layout_marginLeft="@dimen/default_smallestpadding"
+                        android:id="@+id/difftime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textsize_11"
+                        android:text="2m"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:id="@+id/action"
+                android:layout_width="@dimen/height_90"
+                android:layout_height="@dimen/top_30"
+                android:padding="1dp"
+                android:text="@string/unfollow"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_11"
+                app:fill="true"
+                app:hexagon_color="@color/octagon_stroke"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_alphacolor"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

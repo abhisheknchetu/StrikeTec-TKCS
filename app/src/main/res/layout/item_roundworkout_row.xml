@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/roundparent"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/default_smallestpadding"
+    android:paddingRight="@dimen/default_smallestpadding">
+
+    <LinearLayout
+        android:layout_width="@dimen/width_300"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:id="@+id/name"
+            android:layout_width="@dimen/width_150"
+            android:layout_height="@dimen/default_smallbtnheight"
+            android:padding="1dp"
+            android:text="ROUND 1"
+            android:textColor="@color/punches_text"
+            android:textSize="@dimen/default_textsize"
+            android:layout_gravity="center_horizontal"
+            app:hexagon_color="@color/default_alphacolor"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/top_15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_info_bg"
+            android:paddingTop="@dimen/top_30"
+            android:paddingBottom="@dimen/default_smallestpadding">
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

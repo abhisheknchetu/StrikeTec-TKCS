@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="default_calendarheight">25dp</dimen>
+    <dimen name="default_btnpadding">6dp</dimen>
+    <dimen name="default_titlesize">18sp</dimen>
+    <dimen name="default_calendartextsize">18sp</dimen>
+    <dimen name="default_btnhgt">30dp</dimen>
+</resources>

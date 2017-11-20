@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="2dp"
+    android:background="@color/tab_selected"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_smallestpadding"
+            android:paddingTop="@dimen/tablayout_padding"
+            android:paddingBottom="@dimen/tablayout_padding"
+            android:paddingRight="@dimen/default_smallestpadding"
+            android:background="@color/selectbg">
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_25"
+                android:text="Attack"
+                android:layout_centerVertical="true"/>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_marginStart="@dimen/default_padding"
+                android:id="@+id/starttraining"
+                android:layout_width="@dimen/btn_width110"
+                android:layout_height="@dimen/default_editheight"
+                android:padding="1dp"
+                android:text="@string/start"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize"
+                app:fill="true"
+                app:hexagon_color="@color/orange"
+                android:layout_alignParentEnd="true"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/popup_bg">
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/separator"
+                android:layout_alignParentBottom="true"/>
+
+            <com.striketec.mobile.customview.CustomListView
+                android:id="@+id/combolist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp"
+                android:divider="@color/transparent"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

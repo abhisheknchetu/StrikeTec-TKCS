@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_spinner_with_img_relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="start"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/default_textsize"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignEnd="@+id/item"
+        android:layout_height="1dp"
+        android:background="@drawable/separator"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

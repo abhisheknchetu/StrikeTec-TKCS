@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.more.HelpcenterActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:id="@+id/onboard_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tablayout_mainheight"
+        >
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/frequentlyquestions"
+            android:layout_centerVertical="true"
+            android:textColor="@color/punches_text"
+            android:textSize="@dimen/btn_textsize"
+            android:gravity="center"
+            android:paddingLeft="@dimen/default_margin"
+            android:paddingRight="@dimen/default_margin"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/default_alphacolor"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:divider="@color/transparent">
+
+    </ListView>
+
+
+
+</LinearLayout>

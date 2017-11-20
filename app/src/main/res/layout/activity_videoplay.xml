@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.guidance.VideoPlayActivity"
+    android:background="@drawable/background">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"/>
+
+        <TextureView
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/fast_prev_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/fast_prev"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_editheight"
+                    android:src="@drawable/fast_rewind_anim"
+                    android:layout_centerInParent="true"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/fast_prev_text"
+                    android:layout_below="@id/fast_prev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_11"
+                    android:text="10 seconds"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/fast_next_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                >
+
+                <ImageView
+                    android:id="@+id/fast_next"
+                    android:adjustViewBounds="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_editheight"
+                    android:src="@drawable/fast_forward_anim"
+                    android:layout_centerInParent="true"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/fast_next_text"
+                    android:layout_below="@id/fast_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_11"
+                    android:text="10 seconds"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/ProgressTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleview_height"
+        android:text="@string/quickstarttraining"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="@dimen/textsize_20"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+</RelativeLayout>

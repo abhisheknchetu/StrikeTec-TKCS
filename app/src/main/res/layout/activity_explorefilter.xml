@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.leaderboard.ExploreFilterActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/default_padding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_cellheight"
+            android:layout_marginTop="@dimen/default_smallpadding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/left_smallarrow" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.striketec.mobile.customview.HexagonButton
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="@string/country"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    app:angle_coef="25"
+                    app:fill="false"
+                    app:hexagon_color="@color/octagon_stroke" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/spinner_dropdown" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_smallarrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_cellheight"
+            android:layout_marginTop="@dimen/tablayout_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/left_smallarrow" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.striketec.mobile.customview.HexagonButton
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:text="@string/state"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    app:angle_coef="25"
+                    app:fill="false"
+                    app:hexagon_color="@color/octagon_stroke" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/spinner_dropdown" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_smallarrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_cellheight"
+            android:layout_marginTop="@dimen/tablayout_padding">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:src="@drawable/left_smallarrow" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+
+                <com.striketec.mobile.customview.HexagonRadioButton
+                    android:id="@+id/tab_any"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="@string/any"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/default_textsize"
+                    app:hrb_divider="none"
+                    app:hrb_type="left"
+                    app:radio_angle_coef="25"
+                    app:radio_fill="false"
+                    app:radio_hexagon_color="@color/octagon_stroke"
+                    app:selected_color="@color/white"
+                    app:unselected_color="@color/orange"
+                    app:highlight_color="@color/punches_text"
+                    app:highlight_width="@dimen/default_padding"
+                    android:padding="1dp"/>
+
+                <com.striketec.mobile.customview.HexagonRadioButton
+                    android:id="@+id/tab_male"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:text="@string/male"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/default_textsize"
+                    app:hrb_divider="both"
+                    app:hrb_type="middle"
+                    app:radio_angle_coef="25"
+                    app:radio_fill="false"
+                    app:radio_hexagon_color="@color/octagon_stroke"
+                    app:selected_color="@color/white"
+                    app:unselected_color="@color/orange"
+                    app:highlight_color="@color/punches_text"
+                    app:highlight_width="@dimen/default_padding"
+                    android:padding="1dp"/>
+
+                <com.striketec.mobile.customview.HexagonRadioButton
+                    android:id="@+id/tab_female"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:text="@string/female"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/default_textsize"
+                    app:hrb_divider="none"
+                    app:hrb_type="right"
+                    app:radio_angle_coef="25"
+                    app:radio_fill="false"
+                    app:radio_hexagon_color="@color/octagon_stroke"
+                    app:selected_color="@color/white"
+                    app:unselected_color="@color/orange"
+                    app:highlight_color="@color/punches_text"
+                    app:highlight_width="@dimen/default_padding"
+                    android:padding="1dp"/>
+            </RadioGroup>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/right_smallarrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_cellheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:src="@drawable/left_line"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tablayout_padding"
+                android:src="@drawable/left_arrow_line"/>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/default_editheight"
+                android:padding="1dp"
+                android:text="@string/weight.lbs"
+                android:textColor="@color/punches_text"
+                app:hexagon_color="@color/default_alpha"
+                android:textSize="@dimen/default_textsize"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tablayout_padding"
+                android:src="@drawable/right_arrow_line"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:src="@drawable/right_line"/>
+
+        </LinearLayout>
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/weight_rangeseekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:absoluteMaxValue="300"
+            app:absoluteMinValue="100"
+            app:showLabels="false"
+            app:thumbDisabled="@drawable/thumb_icon"
+            app:thumbNormal="@drawable/thumb_icon"
+            app:thumbPressed="@drawable/thumb_icon"
+            app:activateOnDefaultValues="true"
+            app:defaultColor="@color/alphaselectbg"
+            app:activeColor="@color/orange"
+            app:barHeight="2dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/default_cellheight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:src="@drawable/left_line"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tablayout_padding"
+                android:src="@drawable/left_arrow_line"/>
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/default_editheight"
+                android:padding="1dp"
+                android:text="@string/age"
+                android:textColor="@color/punches_text"
+                app:hexagon_color="@color/default_alpha"
+                android:textSize="@dimen/default_textsize"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tablayout_padding"
+                android:src="@drawable/right_arrow_line"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:src="@drawable/right_line"/>
+
+        </LinearLayout>
+
+        <org.florescu.android.rangeseekbar.RangeSeekBar
+            android:id="@+id/age_rangeseekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:absoluteMaxValue="80"
+            app:absoluteMinValue="15"
+            app:showLabels="false"
+            app:thumbDisabled="@drawable/thumb_icon"
+            app:thumbNormal="@drawable/thumb_icon"
+            app:thumbPressed="@drawable/thumb_icon"
+            app:activateOnDefaultValues="true"
+            app:defaultColor="@color/alphaselectbg"
+            app:activeColor="@color/orange"
+            app:barHeight="2dp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

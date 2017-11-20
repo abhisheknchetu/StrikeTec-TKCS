@@ -1,0 +1,490 @@
+<resources>
+    <string name="app_name">StrikeTec</string>
+
+    <string name="facebook_app_id">1039382006204995</string>
+    <string name="fb_login_protocol_scheme">fb1039382006204995</string>
+
+
+    <string name="nointernet">No Internet! Please check your internet connection.</string>
+
+
+    <string name="or">OR</string>
+    <string name="ok">Ok</string>
+    <string name="email">Email</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="password">Password</string>
+    <string name="forgotpwd"><u>Forgot your password?</u></string>
+    <string name="rememberme">Remember Me</string>
+    <string name="nevershowtip">Don\'t show Tips</string>
+
+    <string name="signinwithfb">Sign in with Facebook</string>
+    <string name="signupwithfb">Sign up with Facebook</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_caps">FACEBOOK</string>
+    <string name="signin">Sign In</string>
+    <string name="signupfirst">DON\'T HAVE AN ACCOUNT?</string>
+    <string name="signup">SIGN UP</string>
+
+    <string name="signupguide">Sign up into StrikeTec and learn technique, workout routines, training tips and more with the easy to use mobile app.</string>
+
+    <string name="account">Account</string>
+    <string name="confirmpwd">Confirm Password</string>
+    <string name="continues">Continue</string>
+
+    <string name="error_fname_required">First Name is required.</string>
+    <string name="error_lname_required">Last Name is required.</string>
+    <string name="error_email_required">Email is required.</string>
+    <string name="error_password_required">Password is required.</string>
+    <string name="error_current_password_required">Current password is required.</string>
+    <string name="error_new_password_required">New password is required.</string>
+    <string name="error_confirmpassword_required">Confirm password is required.</string>
+    <string name="error_samepwd_required">Password and Confirm Password has to be same.</string>
+    <string name="error_samenewpwd_required">New password and Confirm Password has to be same.</string>
+    <string name="error_password_short">Password has to be more than 8 chractors</string>
+    <string name="error_invalid_email">Email is invalid.</string>
+    <string name="error_nonuppercase">Password needs at least one uppercase</string>
+    <string name="error_nonspecial">Password needs at least one special character</string>
+    <string name="error_nonlowercase">Password needs at least one lowercase</string>
+    <string name="error_nonnumber">Password needs at least one number</string>
+
+    <string name="forgotpwdtitle">Forgot Password</string>
+    <string name="forgotpwdguide">Type your email address and soon you\'ll receive an email with instructions.</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="noacount">No Account Found</string>
+    <string name="noaccountguide">No one with that email address was found.</string>
+    <string name="tryagain">Try again</string>
+    <string name="finalstep">It\'s All Good</string>
+    <string name="finalstepguide">You just received an email with a code, put it here and we will allow you to reset your password</string>
+    <string name="code">CODE</string>
+    <string name="resetpassword">Reset Password</string>
+    <string name="resetpwdguide">Input your new password to continue</string>
+    <string name="currentpwd">Current Password</string>
+    <string name="newpwd">New Password</string>
+    <string name="confirmnewpwd">Confirm New Password</string>
+
+    <string name="profilequestiontitle">Profile Questions</string>
+    <string name="profilequestionguide">Let us know your preferences so we can recommend you a proper training to achieve your goals.</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="gender">Gender</string>
+    <string name="dateofbirth">Date of birth</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="stance">Stance</string>
+
+    <string name="error_gender_invalid">Please choose gender</string>
+    <string name="error_birthday_invalid">Please chosse birthday</string>
+    <string name="error_weight_invalid">Please choose weight</string>
+    <string name="error_height_invalid">Please choose height</string>
+    <string name="error_stance_invalid">Please choose stance</string>
+
+    <string name="trainingplantitle">Training Plans</string>
+    <string name="trainingplanguide">Let us know your preferences so we can recommend you a proper training to achieve your goals.</string>
+    <string name="skill_one">Fat Loss</string>
+    <string name="skill_two">Cardio &amp; Conditioning</string>
+    <string name="skill_three">Box like a Professional</string>
+
+    <string name="connectwearable">Connect Wearable</string>
+    <string name="connectguide">Connect your sensors and start competing, training and improving!</string>
+    <string name="startasspectator"><u>I\'LL START AS AN SPECTATOR</u></string>
+    <string name="getwearable"><u>GET YOUR WEARABLE RIGHT NOW!</u></string>
+    <string name="searchforneardevice">Search for near devices</string>
+
+    <string name="spectator">Spectator</string>
+    <string name="spectatorguide">As an spectator you\'ll be able to follow users, view their activity and profiles. But you won\'t be able to do trainings, challenges, games or tournaments, in order to do that you need to acquire the wearable.</string>
+    <string name="searchdevices">Searching for Devices</string>
+
+    <string name="foundresult">Found %1$s Devices</string>
+    <string name="connectsensorguide">Connect devices for left and right arms before continuing.</string>
+    <string name="setforleft">Set for Left Arm</string>
+    <string name="setforright">Set for Right Arm</string>
+
+    <string name="tip1_title">Wearable</string>
+    <string name="tip1_guide">StrikeTec\'s hardware tracks the orientation of your Arms &amp; Legs in order to give you instant feedback to your mobile device.</string>
+    <string name="skip">Skip</string>
+
+    <string name="tip2_title">Track Your Progress</string>
+    <string name="tip2_guide">Track your progress by every day, week and month</string>
+
+    <string name="tip3_title">Challenges</string>
+    <string name="tip3_guide">Participate in One-on-One battles, Compete with others in our hosted competitions and enjoy some custom games designed to increase your skills on the bag.</string>
+    <string name="tip4_title">Earn Your Belt</string>
+    <string name="tip4_guide">Earn badges for participating in battles, competitions and games. Earn a new belt as your performance increases during your workouts.</string>
+
+    <string name="tabhome">Home</string>
+    <string name="tabguidance">Guidance</string>
+    <string name="tabtraining">Training</string>
+    <string name="tabchallenges">Challenges</string>
+    <string name="tabmore">More</string>
+
+    <string name="sensorfoundmsg">Sensor :- %1$s detected.</string>
+    <string name="scaningfinished">Scaning Finished</string>
+    <string name="sensornotfound">Sensor not found.</string>
+
+    <string name="conflict">Conflict</string>
+    <string name="conflict_message">You already have a device set up for %1$s, do you want to replace this device</string>
+    <string name="leftarm">Left Arm</string>
+    <string name="rightarm">Right Arm</string>
+    <string name="leftkick">Left Kick</string>
+    <string name="rightkick">Right Kick</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="founddevices">Found %1$s Devices</string>
+    <string name="starttraining">Start Training</string>
+    <string name="stoptraining">Stop Training</string>
+    <string name="connect">Connect</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="quickstart">Quick\nStart</string>
+    <string name="roundtraining">Round\nTraining</string>
+    <string name="comboset">Combos\n&amp; Sets</string>
+    <string name="scriptedround">Scripted\nRounds</string>
+
+    <string name="quickstart_settings">Quick Start Settings</string>
+    <string name="rounds">Rounds</string>
+    <string name="norounds">No Rounds</string>
+    <string name="selectnorounds">You have selected No Rounds</string>
+    <string name="default_preset">Preset 1</string>
+    <string name="min_sec">min:sec</string>
+    <string name="label_time">TIME</string>
+    <string name="label_rest">REST</string>
+    <string name="label_prepare">Prepare</string>
+    <string name="label_warning">Warning</string>
+    <string name="label_totaltime">Total Time</string>
+    <string name="label_gloves">Gloves</string>
+    <string name="force_unit">lbs</string>
+    <string name="glove_unit">oz</string>
+
+    <string name="rounds_unselect">#183b47</string>
+    <string name="rounds_select">#53d9ff</string>
+    <string name="roundtime_unselect">#0d4844</string>
+    <string name="roundtime_select">#00ffba</string>
+    <string name="resttime_unselect">#382129</string>
+    <string name="resttime_select">#e64c4c</string>
+    <string name="prepare_select">#d9d5d5</string>
+    <string name="prepare_unselect">#7e7c7c</string>
+    <string name="set">Set</string>
+    <string name="savenewpreset">Save New Preset</string>
+    <string name="save">Save</string>
+
+    <string name="empty_field_message">New %1$s name can not be empty!</string>
+    <string name="empty_goal">Goal has to be larger than 1</string>
+    <string name="preset">Preset</string>
+    <string name="hint_presetname">PRESET NAME</string>
+
+    <string name="quickstarttraining">Quick Start Training</string>
+    <string name="label_speed">SPEED (MPH)</string>
+    <string name="label_punchcount">PUNCH COUNT</string>
+    <string name="label_power">POWER (LBS)</string>
+    <string name="left">left  </string>
+    <string name="right">right</string>
+    <string name="averagedata">average data</string>
+    <string name="speed_unit">mph</string>
+    <string name="roundtrainingsettings">Round Training Settings</string>
+    <string name="roundtraining_title">Round Training</string>
+
+    <string name="combinations">Combinations</string>
+    <string name="setroutine">Set Routines</string>
+    <string name="combosettitle">Combos &amp; Sets</string>
+    <string name="start">start</string>
+
+    <string name="combinationtraining">Combination Training</string>
+    <string name="setroutinetraining">Set Routine Training</string>
+    <string name="workouttraining">Workout Training</string>
+    <string name="workoutplan">Workout Plans</string>
+    <string name="edit">Edit</string>
+    <string name="time_settings">Time settings</string>
+    <string name="round">round</string>
+    <string name="rest">rest</string>
+    <string name="left_sensor_connect">Connecting to left hand sensor.</string>
+    <string name="right_sensor_connect">Connecting to right hand sensor.</string>
+    <string name="stop_training">Stop Training</string>
+    <string name="trainingfinished">Training is Finished</string>
+    <string name="connectwithsensors">Please connect with sensors</string>
+
+    <string name="feed">Feed</string>
+    <string name="myprogress">My Progress</string>
+    <string name="thisweek">This Week</string>
+    <string name="sessions">Sessions</string>
+    <string name="punches">Punches</string>
+    <string name="speed">Speed</string>
+    <string name="power">Power</string>
+    <string name="week">Week</string>
+
+    <string name="punch_unit">hits</string>
+    <string name="term">term</string>
+    <string name="analysis">Training Details</string>
+    //Analysis
+    <string name="sessionsbreakdown">Sessions Breakdown</string>
+    <string name="roundsbreakdown">Rounds Breakdown</string>
+    <string name="roundbreakdown">Round Breakdown</string>
+    <string name="bad">Bad</string>
+    <string name="average">Average</string>
+    <string name="aboveaverage">Above Average</string>
+    <string name="excellent">Excellent</string>
+    <string name="compareonleaderboard">Compare on leaderboard</string>
+    <string name="roundtime">Round Time / %1$s</string>
+    <string name="compare">Compare</string>
+    <string name="last">last</string>
+    <string name="current">current</string>
+    <string name="besttime">Best Time</string>
+    <string name="speedmph">speed(mph)</string>
+    <string name="powerlbs">power(lbs)</string>
+    <string name="maxspeed">Max speed</string>
+    <string name="maxpower">Max power</string>
+    <string name="secs">Secs</string>
+
+    <string name="training_result_quickstart">Quickstart Training Results</string>
+    <string name="training_result_round">Round Training Results</string>
+    <string name="training_result_workout">Workout Results</string>
+
+    <string name="badperformance">Bad Performance</string>
+    <string name="excellentperformance">Excellent Performance</string>
+    <string name="averageperformance">Average Performance</string>
+    <string name="punchtype">punch type</string>
+    <string name="tips">tips</string>
+    <string name="type">Type</string>
+    <string name="count">count</string>
+    <string name="combos">combos</string>
+    <string name="setresults">Set Results</string>
+    <string name="roundtitle">Round %1$s</string>
+    <string name="quickstartresults">Quickstart Results</string>
+    <string name="roundresults">Round Results</string>
+
+    <string name="selectperiod">Select Period of Time</string>
+    <string name="goalduration">Goal Duration</string>
+    <string name="error_duplicatedate">Please click first one of selected dates to select new Date</string>
+    <string name="error_emptydate">You have to choose start date and end date</string>
+    <string name="error_emptystartdate">You have to select start date</string>
+    <string name="roundtraininigs">Round Trainings</string>
+    <string name="quickstarttrainings">Quickstart Trainings</string>
+
+    <string name="avgtime">avg. time</string>
+    <string name="avgspeed">avg. speed</string>
+    <string name="avgpower">avg. power</string>
+    <string name="trainingquality">Training Quality</string>
+    <string name="bestpunch">best punch</string>
+    <string name="damage">damage</string>
+    <string name="recomendations">recommendations</string>
+    <string name="mistakestotalmessage">you made %1$d mistakes.\nyou must train hard the %2$s</string>
+    <string name="successtraining">You trained perfectly</string>
+    <string name="totalactivetime">total active time</string>
+    <string name="totalinactivetime">total inactive time</string>
+    <string name="activitytime">activity time</string>
+    <string name="inactive">inactive</string>
+    <string name="active">active</string>
+    <string name="veryslow">very slow</string>
+    <string name="weakpunch">weak punch</string>
+    <string name="mistakes">mistakes</string>
+    <string name="pts">pts</string>
+    <string name="skill_pro">pro</string>
+
+    <string name="onboarding">Onboarding</string>
+    <string name="settings">Settings</string>
+    <string name="mysubsriptions">My Subscriptions</string>
+    <string name="store">Store</string>
+    <string name="goals">Goals</string>
+    <string name="mytrainingplans">My Training Plans</string>
+    <string name="helpcenter">Help Center</string>
+    <string name="contactus">Contact Us</string>
+    <string name="aboutstriketec">About StrikeTec</string>
+    <string name="logout">Log Out</string>
+    <string name="aboutstring">We may use, share or sell non-personally identifying information to a third party for any marketing purposes whatsoever. You may be given the opportunity to link to other sites that may use, collect or store certain information about you and you should read the applicable terms and conditions for such sites to determine how your information may or may not be used, collected or stored.\n\nWe may use, share or sell non-personally identifying information to a third party for any marketing purposes whatsoever. You may be given the opportunity to link to other sites that may use, collect or store certain information about you and you should read the applicable terms and conditions for such sites to determine how your information may or may not be used, collected or stored.\n\nWe may use, share or sell non-personally identifying information to a third party for any marketing purposes whatsoever. You may be given the opportunity to link to other sites that may use, collect or store certain information about you and you should read the applicable terms and conditions for such sites to determine how your information may or may not be used, collected or stored.\n</string>
+    <string name="writeus">Write Us</string>
+    <string name="writeusguide">We may use, share or sell non-personally identifying information to a third party for any marketing purposes whatsoever. You may be given the opportunity to link to other sites that may use.</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="frequentlyquestions">Freguently asked questions</string>
+    <string name="question1_subject">Can\'t find video tutorial for every punch, How to learn training?</string>
+    <string name="question1_message">I am new to boxing, when I try to punch , punch speed and force are very slow, and app is saying i have to learn more about straight punch, how can i see videos to learn?</string>
+    <string name="goal">Goal</string>
+    <string name="goal_description">Do %1$d %2$s %3$s in 1 week</string>
+    <string name="goal_descriptionwithenter">Do %1$d %2$s\n%3$s in 1 week</string>
+    <string name="new_goal">New Goal</string>
+    <string name="activity">Activity</string>
+    <string name="activity_boxing">Boxing</string>
+    <string name="activity_kickboxing">Kickboxing</string>
+    <string name="goal_type">Number of %1$s</string>
+    <string name="goal_type_1">punches</string>
+    <string name="goal_type_2">workouts</string>
+    <string name="goal_type_3">Duration</string>
+    <string name="target">Target(%1$s)</string>
+    <string name="target_content">%1$d %2$s</string>
+    <string name="goal_duration">Goal Duration</string>
+    <string name="goal_startdate">Start Date</string>
+    <string name="done">Done</string>
+    <string name="filter">Filter</string>
+    <string name="empty_activity">Please choose activity</string>
+    <string name="empty_type">Please chose type</string>
+    <string name="store_description">Please choose one to buy</string>
+    <string name="preorder">Pre-Order</string>
+    <string name="subscription_tutorial">%1$d Tutorials</string>
+    <string name="subscripiton_annualtutorial">Every week new videos</string>
+    <string name="subscription_additionalprice">Additional for $%1$s</string>
+    <string name="subscription_tournament">%1$d Tournaments</string>
+    <string name="subscription_battle">%1$d Battles</string>
+    <string name="subscription_freeplan">Free Plan</string>
+    <string name="subscription_freeplanduration">Until exhausted</string>
+    <string name="subscripiton_monthplan">Month Plan</string>
+    <string name="subscription_monthduration">Per month</string>
+    <string name="subscription_annualplan">Annual Plan</string>
+    <string name="alltutorials">All Tutorials</string>
+    <string name="allchallenges">All Challenges</string>
+    <string name="allbattles">All Battles</string>
+    <string name="notifications">Notifications</string>
+    <string name="connectedaccoutns">Connected Accounts</string>
+    <string name="sensors">Sensors</string>
+    <string name="recording">Recording</string>
+    <string name="stop">Stop</string>
+    <string name="play">Play</string>
+    <string name="record">Record</string>
+    <string name="newchallenges">New Challenges</string>
+    <string name="battlesupdate">Battles Update</string>
+    <string name="tournamentsupdate">Tournaments Updates</string>
+    <string name="gamesupdates">Games Updates</string>
+    <string name="social">Social</string>
+    <string name="newmessages">New Messages</string>
+    <string name="friendinvites">Friend Invites</string>
+    <string name="sensorconnectivity">Sensor Connectivity</string>
+    <string name="fromstriketec">From Striketec</string>
+    <string name="appupdates">App Updates</string>
+    <string name="striketecpromos">StrikeTec Promos</string>
+    <string name="striketecnews">StrikeTec News</string>
+    <string name="status">Status</string>
+    <string name="battery">Battery</string>
+    <string name="accuracy">Accracy</string>
+    <string name="calibrate">Calibrate</string>
+    <string name="searchforavailabledevices">Search For available devices</string>
+    <string name="error_trainingfinish">Training is not finished yet, please stop training first.</string>
+    <string name="battery_default_value">0%</string>
+    <string name="guidance_workout">Workouts</string>
+    <string name="guidance_tutorial">Tutorials</string>
+    <string name="guidance_drill">Drills</string>
+    <string name="guidance_essential">Essentials</string>
+    <string name="viewcount">%1$d Views</string>
+    <string name="search">Search</string>
+    <string name="favorites">Favorites</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="followingyou">Following You</string>
+    <string name="lastachievement">Last achievement</string>
+    <string name="label_belts">Belts!</string>
+    <string name="label_discipline">Discipline</string>
+    <string name="label_ironfirst">Iron First</string>
+    <string name="statistics">Statistics</string>
+    <string name="avgcount">avg. count</string>
+    <string name="unit_avgcount">Hits/Round</string>
+    <string name="totaltimetrained">Total time Trained</string>
+    <string name="totaldaystrained">Total days trained</string>
+    <string name="challengehistory">Challenges History</string>
+    <string name="win">Win</string>
+    <string name="loss">Loss</string>
+    <string name="vs">VS</string>
+    <string name="editprofile">Edit Profile</string>
+    <string name="visibility">Visibility</string>
+    <string name="publicprofile">Public Profile</string>
+    <string name="achievements">Achievements</string>
+    <string name="trainingstatistics">Training Statistics</string>
+    <string name="changepassword">Change Password</string>
+    <string name="explore">Explore</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="skill">Skill</string>
+    <string name="rank">Rank</string>
+    <string name="age">Age</string>
+    <string name="mmabox">MMA, Box</string>
+    <string name="follow">Follow</string>
+    <string name="unfollow">Unfollow</string>
+    <string name="points">%1$d PTS</string>
+    <string name="chats">Chats</string>
+    <string name="newchat">New Chat</string>
+    <string name="emptycountry">Please select country</string>
+    <string name="wrongcountry">You selected world, can\'t choose state</string>
+    <string name="emptystate">Please select state</string>
+    <string name="emptycity">Please select city</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="any">Any</string>
+    <string name="weight.lbs">Weight. lbs</string>
+    <string name="apply">Apply</string>
+    <string name="listfilter">List Filter</string>
+    <string name="world">World</string>
+    <string name="sort_tournamentrank">Rank</string>
+    <string name="sort_name">Name</string>
+    <string name="sort_speed">AVG Speed</string>
+    <string name="sort_power">AVG Power</string>
+    <string name="sort_punchcount">Punch Count</string>
+    <string name="sort_kickcount">Kick Count</string>
+    <string name="sort_numberchallenges">Number of Challenges</string>
+    <string name="sort_hourstrained">Hours Trained</string>
+    <string name="sortby">Sort By:</string>
+    <string name="birthday">Birthday</string>
+    <string name="label_weight">Weight. LBS</string>
+    <string name="label_height">Height. INCH</string>
+    <string name="connection">Connection</string>
+    <string name="fast_text">%1$d seconds</string>
+    <string name="lasttraining">LAST TRAINING</string>
+    <string name="bestlastweek">THE BEST FROM LAST WEEK!</string>
+    <string name="lasttrainingresult">Your LAST TRAINING is 20% better than THE BEST FROM LAST WEEK!</string>
+    <string name="lasttrainingresult1">is %1$s better than</string>
+    <string name="challengerequests">Challenge Requests</string>
+    <string name="acceptrequest">Accept or decline challenge requests</string>
+    <string name="challenge">Challenge</string>
+    <string name="liketraining">liked your training</string>
+    <string name="notification_following">is now following you</string>
+    <string name="notification_beat">beat you for the 5th time on a battle</string>
+    <string name="viewchallenges">View Challenge</string>
+    <string name="battlerequests">Battle Requests</string>
+    <string name="battles">Battles</string>
+    <string name="decline">Decline</string>
+    <string name="accept">Accept</string>
+    <string name="waiting">Waiting</string>
+    <string name="description">Description</string>
+    <string name="battle_description">This is default battle, this routine is include 3 combinations, try to get top score</string>
+    <string name="tournaments">Tournaments</string>
+    <string name="games">Games</string>
+    <string name="battlesreceived">Battles Received</string>
+    <string name="mybattles">My Battles</string>
+    <string name="finishedbattles">Finished Battles</string>
+
+    <string name="initialization_failed">Initialization Failed</string>
+    <string name="language_not_supported">This Language is not supported</string>
+    <string name="strike_tec">StrikeTec</string>
+    <string name="time_format">yyyy_MM_dd_HH_mm_ss</string>
+    <string name="audio_extention">.3gp</string>
+    <string name="file">file://</string>
+    <string name="change">Change</string>
+    <string name="cancel_subscription">Cancel</string>
+    <string name="current_subscription">Current Subscription</string>
+    <string name="thanks_subscription_text">Thank you for subscribing!\nYou have 3 Tutorials remaining until December 18th, 2017. On that date, the Tutorials count will reset as long as your subscription remains active.\nView your remaining Tutorials at any time.</string>
+    <string name="your_subscription_cancelled">Your subscription has been cancelled. You can still use Tutorials you have left.</string>
+
+    <string name="re_subscribe">Re-Subscribe</string>
+    <string name="confirm_cancel_subscription">Are you sure you want to cancel your subscription?</string>
+    <string name="alert">Alert</string>
+    <string name="false_text">false</string>
+    <string name="you_have_not_subscribed">To access this video, you have not subscribed any plan.\nDo you want to subscribe right now?</string>
+    <string name="select_audio_type">Select audio type from the list</string>
+    <string name="recording_started">Recording started</string>
+    <string name="recording_completed">Recording Completed</string>
+    <string name="playing">Playing</string>
+    <string name="file_not_found">File not found!!</string>
+    <string name="file_deleted">File deleted successfully</string>
+    <string name="error_delete">Error while delete!!</string>
+    <string name="uploading">Uploading…</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="permission_denied">Permission Denied</string>
+    <string name="payment_canceled">Payment canceled.</string>
+
+    <string-array name="comboTypes">
+        <item>Attack</item>
+        <item>Crafty</item>
+        <item>Left Overs</item>
+        <item>Defensive</item>
+        <item>Super Banger</item>
+    </string-array>
+
+</resources>

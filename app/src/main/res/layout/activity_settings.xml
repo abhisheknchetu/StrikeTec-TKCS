@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.settings.SettingsActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/notification_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            >
+
+            <ImageView
+                android:id="@+id/icon_notification"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/icon_notification"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_toRightOf="@+id/icon_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/notifications"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/connectedaccount_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            >
+
+            <ImageView
+                android:id="@+id/icon_connectedaccount"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/icon_share"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_toRightOf="@+id/icon_connectedaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connectedaccoutns"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/sensor_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            >
+
+            <ImageView
+                android:id="@+id/icon_wifi"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/icon_wifi"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_toRightOf="@+id/icon_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sensors"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/record_audio_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            >
+
+            <ImageView
+                android:id="@+id/icon_audio"
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/icon_notification"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_margin"/>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_toRightOf="@+id/icon_audio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recording"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/default_margin"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

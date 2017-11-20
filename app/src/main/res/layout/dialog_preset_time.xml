@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/popup_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding"
+    android:layout_margin="@dimen/tablayout_padding">
+
+    <com.striketec.mobile.customview.CustomTextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/time_settings"
+        android:textAllCaps="true"
+        android:textColor="@color/punches_text"
+        android:textSize="@dimen/textsize_25" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tablayout_padding"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/round_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.HexagonButton
+                style="@style/smallbtnstyle"
+                android:text="@string/round"
+                android:textColor="@color/punches_text"
+                app:fill="true"
+                app:hexagon_color="@color/default_alphacolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_editheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/round_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_editheight"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:editable="false"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="47:50"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_25" />
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/spin_dropdown" />
+
+            </RelativeLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/min_sec"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabtitle_textsize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rest_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.HexagonButton
+                style="@style/smallbtnstyle"
+                android:text="@string/rest"
+                android:textColor="@color/punches_text"
+                app:fill="true"
+                app:hexagon_color="@color/default_alphacolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_editheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/rest_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_editheight"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:editable="false"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="47:50"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_25" />
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/spin_dropdown" />
+
+            </RelativeLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/min_sec"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabtitle_textsize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tablayout_padding"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:id="@+id/prepare_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.HexagonButton
+                style="@style/smallbtnstyle"
+                android:text="@string/label_prepare"
+                android:textColor="@color/punches_text"
+                app:fill="true"
+                app:hexagon_color="@color/default_alphacolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_editheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/prepare_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_editheight"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:editable="false"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="47:50"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_25" />
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/spin_dropdown" />
+
+            </RelativeLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/min_sec"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabtitle_textsize" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/warning_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/default_smallestpadding"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.HexagonButton
+                style="@style/smallbtnstyle"
+                android:text="@string/label_warning"
+                android:textColor="@color/punches_text"
+                app:fill="true"
+                app:hexagon_color="@color/default_alphacolor" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_editheight"
+                >
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/warning_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_editheight"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:editable="false"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="47:50"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_25" />
+
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/spin_dropdown" />
+
+            </RelativeLayout>
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/min_sec"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tabtitle_textsize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_editheight"
+        android:orientation="horizontal"
+        >
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:id="@+id/cancel_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/default_smallbtnheight"
+            android:padding="1dp"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_textsize"
+            app:fill="false"
+            app:hexagon_color="@color/octagon_stroke" />
+
+        <com.striketec.mobile.customview.HexagonButton
+            android:layout_marginStart="@dimen/default_padding"
+            android:id="@+id/ok_btn"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/default_smallbtnheight"
+            android:padding="1dp"
+            android:text="@string/save"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/default_textsize"
+            app:fill="true"
+            app:hexagon_color="@color/orange" />
+
+    </LinearLayout>
+</LinearLayout>

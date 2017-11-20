@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.SplashActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_tip4"
+        android:layout_margin="@dimen/logo_padding_small"
+        android:adjustViewBounds="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/alphaselectbg"
+            android:padding = "@dimen/default_margin"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tip4_title"
+                android:textColor="@color/punches_text"
+                android:textSize="@dimen/btn_textsize" />
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_padding"
+                android:gravity="center"
+                android:text="@string/tip4_guide"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

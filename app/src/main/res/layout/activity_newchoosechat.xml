@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.striketec.mobile.activity.tabs.more.AboutusActivity"
+    android:background="@drawable/background">
+
+    <include layout="@layout/child_toolbar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleview_height"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/default_padding"
+        android:paddingRight="@dimen/default_padding"
+        android:background="@color/tablayout_selected">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/searchview"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/search"
+                android:textSize="@dimen/default_textsize"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/light_white"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:background="@color/transparent"/>
+
+            <ImageView
+                android:id="@+id/search"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_20"
+                android:paddingLeft="@dimen/default_padding"
+                android:src="@drawable/search_icon"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="@dimen/default_smallestpadding"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/punches_text"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/default_smallestpadding"
+        android:paddingRight="@dimen/default_smallestpadding"
+        android:paddingBottom="@dimen/default_smallestpadding"
+        android:divider="@color/transparent"
+        android:scrollbars="none">
+
+    </ListView>
+
+</LinearLayout>

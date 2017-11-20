@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/sensor_hand"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_smallbtnheight"
+            android:text="@string/leftarm"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:textSize="@dimen/default_textsize"
+            android:textColor="@color/punches_text"
+            android:background="@color/selectbg"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:gravity="center_vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.4"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/connect_status"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:text="@string/connected"
+                    android:textColor="@color/speed_color"
+                    android:gravity="end"
+                    android:textSize="@dimen/textsize_11"
+                    android:textAllCaps="true"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:gravity="center_vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/battery"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ProgressBar
+                        android:id="@+id/battery_progress"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/progress_height"
+                        android:layout_weight="1" />
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:id="@+id/battery_value"
+                        android:layout_width="@dimen/default_btnheight"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/speed_color"
+                        android:text="80%"
+                        android:gravity="end"
+                        android:textSize="@dimen/default_textsize"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tablayout_mainheight"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/default_margin"
+                android:paddingRight="@dimen/default_margin"
+                android:gravity="center_vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.3"
+                    android:layout_height="wrap_content"
+                    android:text="@string/accuracy"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/default_textsize"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:paddingRight="@dimen/default_margin"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ProgressBar
+                        android:id="@+id/accuracy_progress"
+                        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/progress_height"
+                        android:layout_weight="1" />
+
+                    <com.striketec.mobile.customview.CustomTextView
+                        android:id="@+id/accracy_value"
+                        android:layout_width="@dimen/default_btnheight"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/speed_color"
+                        android:text="80%"
+                        android:gravity="end"
+                        android:textSize="@dimen/default_textsize"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/default_alphacolor"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/control_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/default_margin"
+            >
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:id="@+id/calibrate_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/default_smallbtnheight"
+                android:padding="1dp"
+                android:text="@string/calibrate"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/default_textsize"
+                app:fill="false"
+                app:hexagon_color="@color/octagon_stroke" />
+
+            <com.striketec.mobile.customview.HexagonButton
+                android:layout_marginStart="@dimen/default_padding"
+                android:id="@+id/disconnect_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/default_smallbtnheight"
+                android:padding="1dp"
+                android:text="@string/disconnect"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/default_textsize"
+                app:fill="true"
+                app:hexagon_color="@color/orange" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

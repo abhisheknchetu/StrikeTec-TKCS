@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.striketec.mobile.activity.tabs.MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleview_height"
+        >
+
+        <ImageView
+            android:id="@+id/search"
+            android:adjustViewBounds="true"
+            android:layout_width="@dimen/height_20"
+            android:layout_height="@dimen/height_20"
+            android:src="@drawable/search_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/default_smallpadding"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:text="@string/tabhome"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_editheight"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/default_smallpadding"
+            android:layout_toLeftOf="@+id/notification">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:src="@drawable/chat_icon"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/default_smallestpadding"/>
+
+            <com.striketec.mobile.customview.CustomDigitView
+                android:id="@+id/chat_unread"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/width_17"
+                android:text="45"
+                android:background="@drawable/bg_badge"
+                android:textSize="@dimen/textsize_9"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_editheight"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/default_smallpadding">
+
+            <ImageView
+                android:adjustViewBounds="true"
+                android:layout_width="@dimen/height_20"
+                android:layout_height="@dimen/height_20"
+                android:src="@drawable/bell_icon"
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:layout_centerVertical="true"
+                />
+
+            <com.striketec.mobile.customview.CustomDigitView
+                android:id="@+id/notification_count"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/width_17"
+                android:text="45"
+                android:background="@drawable/bg_badge"
+                android:textSize="@dimen/textsize_9"
+                android:textColor="@color/white"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_smallbtnheight"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/black" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/AppTabLayoutFixed"/>
+
+    </RelativeLayout>
+
+    <com.striketec.mobile.customview.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.striketec.mobile.customview.SquareRelativeLayout
+    android:id="@+id/custom_cell"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:background="@color/calendar_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/leftview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/octagon_stroke"/>
+
+        <View
+            android:id="@+id/rightview"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@color/first_orange"/>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleimageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/orange"/>
+
+    <com.striketec.mobile.customview.CustomDigitView
+        android:id="@+id/datetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_textsize"
+        android:textColor="@color/white"
+        android:text="23"
+        android:layout_centerInParent="true"/>
+
+
+
+</com.striketec.mobile.customview.SquareRelativeLayout>

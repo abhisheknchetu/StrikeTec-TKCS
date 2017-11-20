@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin"
+        >
+
+        <LinearLayout
+            android:id="@+id/roundinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_editheight"
+            android:layout_alignTop="@+id/rounddetailinfoview"
+            android:layout_alignBottom="@+id/rounddetailinfoview"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.CustomDigitView
+                android:id="@+id/comboindex"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_25"
+                android:gravity="center"
+                android:background="@drawable/bg_rectangle_punches"
+                />
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Min"
+                android:paddingLeft="@dimen/default_smallestpadding"
+                android:paddingRight="@dimen/default_smallestpadding"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:textSize="@dimen/textsize_10"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/default_margin"
+            android:id="@+id/rounddetailinfoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/roundinfo"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/comboname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/besttime"
+                    android:textSize="@dimen/default_textsize"
+                    android:textColor="@color/punches_text"
+                    android:includeFontPadding="false"
+                    />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:id="@+id/combo_string"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/secs"
+                    android:textSize="@dimen/textsize_11"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:includeFontPadding="false"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:src="@drawable/arrow_right"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selectbg"/>
+
+</LinearLayout>

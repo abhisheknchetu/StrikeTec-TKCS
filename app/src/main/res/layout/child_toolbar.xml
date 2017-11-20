@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titleview_height"
+    android:background="@color/transparent"
+    app:titleTextColor="@color/white"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:paddingLeft="@dimen/titleimage_padding"
+            android:id="@+id/back"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/titleimage_padding"
+            android:paddingTop="@dimen/titleimage_padding"
+            android:paddingBottom="@dimen/titleimage_padding"
+            android:src="@drawable/back"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/quickstarttraining"
+            android:gravity="center"
+            android:textAllCaps="true"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:id="@+id/second_image"
+            android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/titleimage_padding"
+            android:paddingTop="@dimen/titleimage_padding"
+            android:paddingBottom="@dimen/titleimage_padding"
+            android:src="@drawable/compare_icon_white"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+        <com.striketec.mobile.customview.CustomTextView
+            android:id="@+id/second_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/punches_text"
+            android:textSize="@dimen/default_textsize"
+            android:textStyle="bold"
+            android:paddingRight="@dimen/default_smallpadding"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>

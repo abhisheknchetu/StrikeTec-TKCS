@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="caldroid_monthyear_title">#ff396b</color>
+    <color name="cladroid_week_bgcolor">#dddddd</color>
+
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="caldroid_black">#000000</color>
+    <color name="caldroid_transparent">#00000000</color>
+    <!-- For settings framework -->
+    <color name="caldroid_lighter_gray">#ddd</color>
+    <color name="caldroid_gray">#CCC</color>
+    <color name="caldroid_darker_gray">#aaa</color>
+    <color name="caldroid_middle_gray">#888</color>
+    <!-- A light Holo shade of blue -->
+    <color name="caldroid_holo_blue_light">#ff33b5e5</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="caldroid_holo_blue_dark">#ff0099cc</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="caldroid_sky_blue">#FFA3E8F7</color>
+
+
+    <color name="cell_text_color">#666666</color>
+    <color name="cell_text_color_dark">#00ff00</color>
+    <color name="caldroid_333">#333</color>
+    <color name="caldroid_555">#555</color>
+    <color name="caldroid_light_red">#ff7f7f</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000ff</color>
+
+    <!--color of tab-->
+    <color name="bg_tab">#4983bb</color>
+    <color name="bg_week">#fe6a88</color>
+
+    <!--color of info-->
+    <color name="info_text">#808080</color>
+
+    <!--cell colors-->
+    <color name="cell_safe">#c6c6c6</color>
+    <color name="cell_conceive">#9eee50</color>
+    <color name="cell_ovulation">#41a844</color>
+    <color name="cell_menstrual">#febaba</color>
+
+    <color name="cell_currentmonth">#303b48</color>
+    <color name="cell_outmonth">#90979e</color>
+
+    <color name="yearcolor">#39E3ED</color>
+    <color name="yearmonth_titlebg">#CC14323E</color>
+    <color name="grid_bg">#FF173542</color>
+
+</resources>

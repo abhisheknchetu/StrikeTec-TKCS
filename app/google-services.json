@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "827058148736",
+    "firebase_url": "https://striketec-23e4f.firebaseio.com",
+    "project_id": "striketec-23e4f",
+    "storage_bucket": "striketec-23e4f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827058148736:android:a50a26a41552e798",
+        "android_client_info": {
+          "package_name": "com.striketec.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827058148736-jvua463fru0uh5rpo8vcqvoao2obv2mo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.striketec.mobile",
+            "certificate_hash": "f5c6a203a4794ed95aaa1ea278d91c70e298b8ea"
+          }
+        },
+        {
+          "client_id": "827058148736-7ttpmqlaf4l7ra120d700a59f8usb5gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDymgU3WFJNtBZE0_E_3OGUZAqElG6QEkc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827058148736-7ttpmqlaf4l7ra120d700a59f8usb5gv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

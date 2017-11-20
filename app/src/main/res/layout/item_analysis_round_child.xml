@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_margin">
+
+        <LinearLayout
+            android:id="@+id/roundinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rounddetailinfoview"
+            android:layout_alignTop="@+id/rounddetailinfoview"
+            android:orientation="vertical">
+
+            <com.striketec.mobile.customview.CustomDigitView
+                android:id="@+id/roundindex"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rectangle_punches"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_25" />
+
+            <com.striketec.mobile.customview.CustomTextView
+                android:id="@+id/duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_smallestpadding"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/default_smallestpadding"
+                android:paddingRight="@dimen/default_smallestpadding"
+                android:text="5 Min"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_10" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/rounddetailinfoview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin"
+            android:layout_toRightOf="@+id/roundinfo"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/besttime"
+                    android:textAllCaps="true"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/textsize_10" />
+
+                <com.striketec.mobile.customview.CustomDigitView
+                    android:id="@+id/besttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:text="5:00"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/textsize_25" />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:includeFontPadding="false"
+                    android:text="@string/secs"
+                    android:textAllCaps="true"
+                    android:textColor="@color/punches_text"
+                    android:textSize="@dimen/textsize_10" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:layout_marginRight="@dimen/default_smallestpadding"
+                android:background="@color/unselectbg" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/maxspeed"
+                    android:textAllCaps="true"
+                    android:textColor="@color/speed_color"
+                    android:textSize="@dimen/textsize_10" />
+
+                <com.striketec.mobile.customview.CustomDigitView
+                    android:id="@+id/maxspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:text="220"
+                    android:textColor="@color/speed_color"
+                    android:textSize="@dimen/textsize_25" />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:includeFontPadding="false"
+                    android:text="@string/speed_unit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/speed_color"
+                    android:textSize="@dimen/textsize_10" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/default_smallestpadding"
+                android:layout_marginRight="@dimen/default_smallestpadding"
+                android:background="@color/unselectbg" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="@string/maxpower"
+                    android:textAllCaps="true"
+                    android:textColor="@color/force_color"
+                    android:textSize="@dimen/textsize_10" />
+
+                <com.striketec.mobile.customview.CustomDigitView
+                    android:id="@+id/maxpower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:text="310"
+                    android:textColor="@color/force_color"
+                    android:textSize="@dimen/textsize_25" />
+
+                <com.striketec.mobile.customview.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_smallestpadding"
+                    android:includeFontPadding="false"
+                    android:text="@string/force_unit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/force_color"
+                    android:textSize="@dimen/textsize_10" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/width_17"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/default_margin"
+                android:adjustViewBounds="true"
+                android:src="@drawable/arrow_right" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/selectbg"/>
+
+</LinearLayout>
